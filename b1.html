@@ -1,0 +1,48 @@
+<?php include('b1.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>thenewdivya</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<form class="form-horizontal" role="form" method="post" action="http://localhost:8080/New Folder/b1.php">
+	<div class="form-group">
+	<label for="name" class="col-sm-2 control-label">Name</label>
+
+	<div class="col-sm-10">
+	<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+	</div>
+
+	</div>
+      
+      Country:<select name="country" size="50px">
+        <option value="">select..</option>
+        <option value="uk">UK</option>
+        <option value="usa">USA</option>
+        <option value="spain">Spain</option>
+        <option value="france">France</option>
+        <option value="china">China</option>
+        <option value="japan">Japan</option>
+    </select><br />
+
+<div class="container" style=width:"2000px";>
+<h3 class="text-center">checkbox </h3>
+<div class="checkbox">
+ <input type="checkbox" name="interest[]"  value="male">male
+<br/>
+ <input type="checkbox" name="interest[]" value="female">female
+<br/>
+ <input type="checkbox" name="interest[]" value="others">others
+<br/>
+</div>
+</div>
+<button type="radio" name="register" class="btn">Register</button>
+
+</form>
+</body>
+</html>
